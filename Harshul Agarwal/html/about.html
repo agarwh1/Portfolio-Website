@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Harshul Agarwal</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="icon" href="./img/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script scr = "https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+      
+      
+      
+        function navBarShowHide(){
+
+          var x = document.getElementById("mobilenav");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+        }
+      </script>
+</head>
+<body>
+    <!-- navigation  -->
+    <header class = "header">
+        <a href="/" class="logo">Harshul Agarwal</a>
+        <nav class = "navbar">
+            <!-- <input type="checkbox" id = "check">
+            <label for="check" class = "checkbtn">
+                <i class = "fas fa-bars"></i>
+            </label> -->
+            <ul>
+                <a href="/" >Home</a>
+                <a href="./about.html" class = "active">About Me</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="https://www.linkedin.com/in/harshul-agarwal/">Linkedin</a>
+                <a href="./contact.html">Contact</a>
+                <i class="fa-solid fa-xmark"></i>
+            </ul>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                
+
+        </nav>
+        <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu" onclick="navBarShowHide()"></ion-icon>
+   
+    </header>
+
+   <!-- mobile navigation -->
+    <div class="mobile_nav" id="mobilenav">
+        <header class = "mobile_header">
+            <div class="mbileHeader">     
+                <a href="/" class="logo_mobile">Harshul Agarwal</a>
+                <span  onclick="navBarShowHide()">Close</span>
+                </div>
+                <nav class = "navbar_mobile">
+                    
+                        <a href="/" >Home</a>
+                        <a href="./about.html" class = "active">About Me</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="https://www.linkedin.com/in/harshul-agarwal/">Linkedin</a>
+                        <a href="./contact.html">Contact</a>
+                        <i class="fa-solid fa-xmark"></i>
+                    
+                    </nav>
+
+                
+             </header>
+    </div>
+
+
+    <!-- about page  -->
+   
+    <section class = "about">
+        <div class = "about-content">
+            <div class="northeastern_University">
+            <div class = "northeastern">
+            <h1>Now at...</h1>
+            <h3>Northeastern University</h3>
+            <p>Bachelors of Science: Computer Science (BSCS) - Freshman</p>
+
+                <div class = "involvements">
+                    <p>
+                    INOVOLVEMENTS:
+                    </p>
+                    <p>
+                    Northeasterns Young Entrepreneurs Club
+                    </p>
+                </div>
+            </div>
+            <div class="northeastern_University_logo">
+                <img src="../img/Northeasternlogo.png" alt="">
+            </div>
+        
+        
+        </div>
+     <div class="king_George">
+            <div class = "kgv">
+                <h1>Previously at...</h1>
+                <h3>King George V School Hong Kong</h3>
+                <p>Completed the International Baccaleaurate and International General Certificate of Secondary Education Program</p>
+
+                <div class = "involvements">
+                    <p>
+                    INOVOLVEMENTS:
+                    </p>
+                    <ul>
+                        <li>Founder of STEM Tutoring Club</li>
+                        <li>Founder of Coding for the Community Club</li>
+                        <li>Unicef Hong Kong Co-Head</li>
+                        <li>Lives Without Knives Web Developer</li>
+                        <li>Head of Communications at Impact Hong Kong YLC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="king_George_logo">
+                <img src="../img/kgvlogo.png" alt="">
+            </div>
+        </div>
+          
+        </div>
+    
+     
+
+        
+
+        <div class="resume_btn">
+            <button id="cardbut" type="button"><a href="../Agarwal_Harshul_Resume.pdf" target=”_blank”>Read my full resume</a></button> 
+        </div>
+       
+
+    </section>
+  
+</body>
+</html>

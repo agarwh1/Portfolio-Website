@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lora;
+}
+
+body {
+    color: #2c666e;
+    overflow: auto;
+    background: #DEDEE0;
+
+}
+
+
+ 
+/* header  */
+.header_toggle,
+.header_close {
+    display: none;
+    font-size: 2.5rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    background: #dedee0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 100; */
+    z-index: 99;
+}
+
+.logo {
+    position: relative;
+    font-size: 1.6rem;
+    color: #2c666e;
+    text-decoration: none;
+    font-weight: 600;
+    width: 30%;
+    font-family: "Lora", serif;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    /* line-height: 6rem; */
+    /* background-color: red; */
+}
+
+.checkbtn {
+    font-size: 3rem;
+    color: white;
+    float: right;
+    line-height: 4rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.navbar a {
+    font-size: 1.2rem;
+    color: #2c666e;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.navbar a:hover,
+.navbar a.active,
+.navbar_mobile a.active {
+    color: #7e7166;
+}
+
+/* mobile Nav  */
+.mobile_nav {
+    height: 100vh;
+    width: 100%;
+    background: #dedee0;
+    z-index: 10000;
+    display: none;
+    padding: 1.4rem 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999;
+}
+
+.mbileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_mobile {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c666e;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+.navbar_mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.navbar_mobile a {
+    display: block;
+    font-size: 18px;
+    color: #2c666e;
+    text-decoration: none;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+/* header end  */
+
+/* about page start  */
+
+.about {
+    /* display: flex; */
+    /* background: url("../img/generalbackground.jpg") no-repeat; */
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 10%;
+    background: #dedee0;
+}
+
+.about-content {
+    /* max-width: 750px; */
+}
+.northeastern_University,
+.king_George {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.northeastern,.northeastern_University_logo,.kgv,.king_George_logo{
+    width: 50%;
+   
+}
+.northeastern_University_logo,.king_George_logo {
+    text-align: center;
+
+}
+.king_George{
+    margin-top: 3rem;
+}
+.northeastern_University_logo {
+ 
+}
+
+.about-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.about-content h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.about-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #7e7166;
+}
+
+.about-content h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.about-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 5px 0 40px;
+}
+
+.about-content li {
+    position: relative;
+    font-size: 16px;
+    list-style-type: none;
+    font-style: italic;
+}
+
+.about-content p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.northeastern_University_logo img {
+    width: 15rem;
+}
+.king_George_logo img {
+    width: 19rem;
+}
+
+.logo2 {
+    bottom: 200px;
+    position: relative;
+    left: 200px;
+}
+
+.logo3 {
+    top: 200px;
+    position: relative;
+    right: 115px;
+}
+.involvements {
+    position: relative;
+    font-size: 16px;
+    margin: 5px 0 20px;
+}
+
+.involvements p::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.involvements li::before {
+    content: "";
+    position: absolute;
+    top: 100;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedee0;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.resume_btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#cardbut {
+    /* position: absolute; */
+    /* bottom: 1; */
+    /* margin-top: 45%;
+    left: 43%; */
+    outline: none;
+    border: none;
+    background: #7e7166;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    box-shadow: 0 0 8px;
+    text-align: center;
+}
+
+#cardbut:hover {
+    background: #7e7166;
+    color: #dedee0;
+}
+
+#cardbut a {
+    text-decoration: none;
+    color: #dedee0;
+}
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@keyframes maniActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/* @media only screen and (max-width:600px){
+    .about{
+        background: url("Phonebackground.jpg") no-repeat;
+        display: flex;
+        background-size: cover;
+        background-position: center ;
+        align-items: center;
+        height: 100vh;
+        padding: 60% 10%;
+    }
+
+    .northeastern{
+        margin-top: 150%;
+    }
+
+    .logo2{
+        size: 100px 200px;
+        width: 200px;
+    }
+
+    #cardbut{
+        margin-top: 150%;
+    }
+}
+
+@media only screen and (max-width: 1125px){
+    body{
+        background: url("generalbackgroundiphone.png") no-repeat ;
+    }
+
+   .about{
+    display: none;
+   }
+} */
+
+/* @media only screen and (max-width: 1439px){
+    body{
+        background: url("../img/generalbackground1023.png") no-repeat ;
+    }
+
+} */
+
+/* mobile screen */
+
+@media only screen and (max-width: 600px) {
+    /* nav bar  */
+    .header {
+        padding: 1rem 4%;
+        /* border-bottom: 1px solid green; */
+        -webkit-box-shadow: 1px -2px 21px -3px rgba(171,169,171,1);
+        -moz-box-shadow: 1px -2px 21px -3px rgba(171,169,171,1);
+        box-shadow: 1px -2px 21px -3px rgba(171,169,171,1);
+        }
+        .logo{
+            width: 60%;
+            font-size: 1.4rem;
+        }
+        .header_toggle{
+            display: block;
+        }
+        .navbar {
+            display: none;
+        }
+        .mobile_nav{
+            /* display: block; */
+        }
+
+    /* end nav  */
+
+    /* about page  */
+
+    .about {
+        padding: 7rem 4% 7rem 4%;
+    }
+    .northeastern_University,
+    .king_George {
+        flex-direction: column;
+    }
+
+    .about-content h1 {
+        font-size: 1.6rem;
+
+    }
+    .about-content h3 {
+        font-size: 1.2rem;
+
+    }
+    .about-content p {
+        font-size: 1rem;
+
+    }
+    .northeastern,.northeastern_University_logo,.kgv,.king_George_logo{
+        width: 100%;  
+    }
+    .northeastern_University_logo,.king_George_logo{
+
+        text-align: center;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 601px) and (max-width: 1024px){
+    .navbar a {
+        margin-left: 1.6rem;
+    }
+}
+
+/* large screen  */
+@media  only screen and (min-width:2400px){
+
+    /* nav bar start  */
+    .logo {
+        font-size: 4.5rem;
+    }
+    .navbar a {
+        font-size: 3.6rem;
+        margin-left: 5rem;
+    }
+
+    .about-content h1 {
+        font-size: 9rem;
+
+    }   .about-content h3 {
+        font-size: 6rem;
+
+    }
+    .about-content p{
+        font-size: 3.6rem; 
+    }
+
+/* nav bar end  */
+
+.northeastern_University_logo img {
+    width: 40rem;
+}
+.king_George_logo img {
+    width: 52rem;
+}
+
+ul li {
+
+}
+.resume_btn{
+    margin-top: 10rem;
+}
+#cardbut {
+    width: 30rem;
+    height: 8rem;  
+    border-radius: 5rem;
+    font-size: 2rem;
+}
+
+.about-content li {
+    font-size: 3.6rem; 
+}
+}
